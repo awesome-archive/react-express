@@ -8,7 +8,9 @@ import markdownOptions from "../utils/MarkdownOptions";
 const content = markdown(markdownOptions)`
 Babel is a highly configurable compiler that lets you use experimental JavaScript features and extensions, compiling down into older JavaScript versions that can be supported on a wider range of platforms. Of course, if a native platform doesn't support an ES2015 feature like \`Promise()\`, Babel won't fully be able to help -- but it can in many cases "polyfill" missing APIs to provide this functionality.
 
-Babel enables debugging of the the original source code by including **source maps** with the compiled JavaScript. JavaScript interpreters will run the compiled code, but map it to the source code in the debugger so that you can debug the source code instead of the (generally quite ugly) compiled output.
+Babel enables debugging of the original source code by including **source maps** with the compiled JavaScript. JavaScript interpreters will run the compiled code, but map it to the source code in the debugger so that you can debug the source code instead of the (generally quite ugly) compiled output.
+
+> Note: if you're looking for a simple React setup, you don't need to install Babel. You should instead use \`create-react-app\`, described in the [Quick Start](quick_start) section. Manually installing and configuring Babel gives you more control over the JavaScript features you can use, but isn't necessary to get started with React.
 
 # Plugins, presets, and stages
 
